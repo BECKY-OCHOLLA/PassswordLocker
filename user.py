@@ -29,8 +29,8 @@ def display_users(cls):
     '''
     method that returns info from the userlist
     '''
-    for users in cls.users:
-    return cls.userslists
+    for user in cls.userslists:
+      return cls.userslists
 
 @classmethod
 def find_by_number(cls,number):

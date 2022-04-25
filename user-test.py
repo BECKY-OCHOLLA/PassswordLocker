@@ -22,4 +22,11 @@ def test_init_(self):
     '''
     self.assertEqual(self.new_user.user_name,"Becky")
     self.assertEqual(self.new_user.password,"2022")
+
+def test_save_user(self):
+    '''
+    test-save user to check if the user has been saved
+    '''
+    self.new_User.save_user() #saving the new user
+    self.assertEqual(len(user.user_list),1)
     

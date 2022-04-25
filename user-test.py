@@ -1,4 +1,4 @@
-from typing_extensions import Self
+
 import unittest #importing the unittest module
 from user import user #importing the user class
 
@@ -35,8 +35,21 @@ def test_save_multiple_contact(self):
     test_save_multiple_contact to check if we can save multiple contact
     objects to our contact_list
     '''
-    self.new_user.save_contact()
-    test_user = user("Test","user","0712345678","test@user.com") # new contact
+    self.new_user.save_user()
+    test_user = user("Test","user","0712345678","test@user.com") # new user
     test_user.save_user()
     self.assertEqual(len(user.user_list),2)
-    
+
+def test_delete_contact(self):
+    '''
+    test_delete_contact to test if we can remove a contact from our contact list
+    '''
+    self.new_user.save_user()
+    test_user = user("Test","user","0729070936","test@user.com") # new user
+    test_user.save_user()
+
+    self.new_contact.delete_contact()# Deleting a user object
+    self.assertEqual(len(user.user_list),1)  
+
+if __name__ == '__main__' :
+    unittest.main() 

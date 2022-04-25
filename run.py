@@ -15,3 +15,17 @@ def delete_user(user):
     
 def find_user(number):
     return user.find_by_number(number)
+
+
+def create_account(accountusername,accountname,accountpassword):
+  newaccount= credentials(accountusername,accountname,accountpassword):
+  return newaccount
+
+def save_account(user):
+   return user.save_account()
+
+def delete_account(user):
+   return user.delete_account()
+    
+def find_account(number):
+    return credentials.find_by_number(number)

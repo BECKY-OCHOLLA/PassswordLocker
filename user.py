@@ -25,3 +25,10 @@ def delete_users(self):
     method used to delete users from userlist
     '''
     user.userslists.remove(self)
+
+@classmethod
+def display_users(cls):
+    '''
+    method that returns info from the userlist
+    '''
+    return cls.userslists

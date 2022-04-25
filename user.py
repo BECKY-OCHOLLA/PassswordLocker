@@ -29,6 +29,7 @@ def display_users(cls):
     '''
     method that returns info from the userlist
     '''
+    for users in cls.users:
     return cls.userslists
 
 @classmethod

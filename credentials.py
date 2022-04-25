@@ -25,4 +25,23 @@ def delete_account(self):
     '''
     credentials.accounts.remove(self)
 
+@classmethod
+def display_accounts(cls):
+    '''
+    method that returns info from the accounts
+
+    '''
+    for accounts in cls.accounts:
+      return cls.accounts
+
+
+@classmethod
+def find_by_number(cls,number):
+    '''
+    the method takes in a user name and returns a contact that matches that number
+    '''
+    for accounts in cls.accounts:
+        if accounts.accountusername == number:
+            return accounts
+
 

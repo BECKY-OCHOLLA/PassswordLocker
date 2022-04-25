@@ -1,3 +1,6 @@
+from operator import truediv
+
+
 class user:
     '''
     A class thatbgenerates new instance of users
@@ -32,3 +35,25 @@ def display_users(cls):
     method that returns info from the userlist
     '''
     return cls.userslists
+
+@classmethod
+def find_by_number(cls,number):
+    '''
+    the method takes in a user name and returns a user that matches that number
+    '''
+    for user in cls.userslists:
+        if user.password == number:
+            return user
+
+
+@classmethod
+def user_exist(cls,number):
+    '''
+    method that checks if a user exists
+    '''
+
+    for user in cls.userslists:
+        if user.user_name == number:
+            return True
+            return False
+      

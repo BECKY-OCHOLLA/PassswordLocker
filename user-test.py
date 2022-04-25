@@ -14,7 +14,7 @@ def setUp(self):
     '''
     set up method to run before each test case
     '''
-    self.new_User = user("Becky","Ocholla","2022") # create contact object
+    self.new_User = user("Becky","2022") # create contact object
 
 def test_init_(self):
     '''
@@ -29,4 +29,14 @@ def test_save_user(self):
     '''
     self.new_User.save_user() #saving the new user
     self.assertEqual(len(user.user_list),1)
+
+def test_save_multiple_contact(self):
+    '''
+    test_save_multiple_contact to check if we can save multiple contact
+    objects to our contact_list
+    '''
+    self.new_user.save_contact()
+    test_user = user("Test","user","0712345678","test@user.com") # new contact
+    test_user.save_user()
+    self.assertEqual(len(user.user_list),2)
     

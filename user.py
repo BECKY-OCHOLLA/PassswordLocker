@@ -23,11 +23,6 @@ def save_user(self):
     '''  
     user.userslists.append(self)  
 
-def delete_users(self):
-    '''
-    method used to delete users from userlist
-    '''
-    user.userslists.remove(self)
 
 @classmethod
 def display_users(cls):

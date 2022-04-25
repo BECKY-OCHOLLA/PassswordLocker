@@ -14,7 +14,15 @@ def __init__(self,accountusername,accountname,accountpassword):
 
 def save_account(self):
     '''
-    save_account method saves user intouserlists
+    save_account method saves credentials into accounts
     '''  
 
     credentials.accounts.append(self)
+
+def delete_account(self):
+    '''
+    delete account method used to delete credentials from accounts
+    '''
+    credentials.accounts.remove(self)
+
+
